@@ -1,0 +1,85 @@
+
+* {
+    box-sizing: border-box;
+  
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: rgb(51, 48, 48);
+    font-family: "Montserrat", sans serif;
+  }
+  
+  #welcome-section {
+    position: relative;
+  }
+  section {
+    width: 100vw;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10rem 5rem;
+  }
+  section:nth-child(odd) {
+    background-color: skyblue;
+    color: fff !important;
+  }
+  section h1 {
+    font-size: 3.5rem;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-image {
+    position: relative;
+    background-color: rgba(249, 251, 252, 0.2);
+    min-width: calc(500px + 10vw);
+    min-height: calc(280px + 3vh);
+    border-radius: 30px;
+    margin: 2rem;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+      10px 10px 70px rgba(0, 0, 0, 0.2),
+      inset 5px 5px 10px rgba(250, 250, 250, 0.5),
+      inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+      inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  }
+  #hero-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-image: url(https://myatov.ru/news/wp-content/uploads/2019/02/git-for-beginners.png);
+    background-position: center;
+    background-size: 100%;
+    z-index: -1;
+  }
+  
+  #image {
+    max-width: calc(400px + 20vw);
+    margin: 5rem 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .section-img {
+    width: 100%;
+  }
+  
+  #info,
+  #main-text {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  
